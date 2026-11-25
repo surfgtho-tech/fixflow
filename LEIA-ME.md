@@ -1,4 +1,4 @@
-﻿# FixFlow – app de manutenção
+﻿# Robustfix – app de manutenção
 
 App web (PWA) para gerir os reparos dos tenants: o gestor cria os jobs, os funcionários
 recebem no celular, vão até o local, mudam o status, mandam fotos, pedem peças e fecham o job.

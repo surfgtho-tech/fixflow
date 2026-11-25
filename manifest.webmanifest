@@ -1,6 +1,6 @@
 {
-  "name": "FixFlow – Maintenance Jobs",
-  "short_name": "FixFlow",
+  "name": "Robustfix – Maintenance Jobs",
+  "short_name": "Robustfix",
   "start_url": "./#/jobs",
   "scope": "./",
   "display": "standalone",

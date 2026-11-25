@@ -1,10 +1,10 @@
 ﻿// ─────────────────────────────────────────────────────────────
-//  FixFlow – configuration
+//  Robustfix – configuration
 //  Leave SUPABASE_URL / SUPABASE_ANON_KEY empty to run in DEMO mode
 //  (data stays only on this device). Fill them in to go live.
 // ─────────────────────────────────────────────────────────────
 export const CONFIG = {
-  APP_NAME: 'FixFlow',
+  APP_NAME: 'Robustfix',
   COMPANY_NAME: 'Maintenance Team',
 
   // Supabase → Project Settings → API

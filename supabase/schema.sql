@@ -1,5 +1,5 @@
 -- ═══════════════════════════════════════════════════════════
---  FixFlow – Supabase schema
+--  Robustfix – Supabase schema
 --  Paste this whole file into Supabase → SQL Editor → Run.
 --  Safe to run once on a new project.
 -- ═══════════════════════════════════════════════════════════

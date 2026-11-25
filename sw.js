@@ -1,5 +1,5 @@
 // Network-first service worker: always fresh when online, works offline for the app shell.
-const CACHE = 'fixflow-v1';
+const CACHE = 'robustfix-v2';
 const SHELL = ['./', 'index.html', 'css/styles.css', 'js/app.js', 'js/ui.js', 'js/store.js', 'js/config.js', 'manifest.webmanifest', 'icons/icon.svg'];
 
 self.addEventListener('install', (e) => {

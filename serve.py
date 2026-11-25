@@ -15,5 +15,5 @@ class NoCache(http.server.SimpleHTTPRequestHandler):
 
 if __name__ == "__main__":
     handler = functools.partial(NoCache, directory=ROOT)
-    print(f"FixFlow running at http://localhost:{PORT}")
+    print(f"Robustfix running at http://localhost:{PORT}")
     http.server.ThreadingHTTPServer(("", PORT), handler).serve_forever()

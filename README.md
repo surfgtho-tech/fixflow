@@ -1,4 +1,4 @@
-# FixFlow
+# Robustfix
 
 [![E2E tests](https://github.com/surfgtho-tech/fixflow/actions/workflows/tests.yml/badge.svg)](https://github.com/surfgtho-tech/fixflow/actions/workflows/tests.yml)
 
