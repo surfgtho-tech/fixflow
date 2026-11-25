@@ -1,0 +1,13 @@
+{
+  "name": "fixflow",
+  "private": true,
+  "description": "Maintenance job management PWA – end-to-end tests",
+  "scripts": {
+    "start": "python serve.py",
+    "test": "playwright test",
+    "test:report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.48.2"
+  }
+}

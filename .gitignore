@@ -3,3 +3,7 @@ __pycache__/
 Thumbs.db
 .env
 .vscode/
+node_modules/
+test-results/
+playwright-report/
+package-lock.json

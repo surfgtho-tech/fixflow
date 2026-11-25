@@ -1,5 +1,7 @@
 # FixFlow
 
+[![E2E tests](https://github.com/surfgtho-tech/fixflow/actions/workflows/tests.yml/badge.svg)](https://github.com/surfgtho-tech/fixflow/actions/workflows/tests.yml)
+
 **Maintenance job management for property teams** – a mobile-first Progressive Web App that replaces a paid field-service subscription.
 
 The office creates repair jobs reported by tenants (photos, address, description, contact details). The maintenance team gets them on their phones, navigates to the property, updates the status, uploads photos, requests parts, and closes the job – or keeps it open with the reason.
@@ -55,6 +57,19 @@ sw.js                 offline app shell
 
 ```bash
 python serve.py        # http://localhost:5173
+```
+
+## Automated tests
+
+End-to-end tests with [Playwright](https://playwright.dev) drive the app in real browsers on **Android (Pixel 7), iPhone 14 and desktop Chrome**. They run on every push via GitHub Actions and use demo mode, so they never touch real company data.
+
+Covered: demo/live login, team-wide job list and filters, tabs, search, map directions, tenant call/SMS/WhatsApp links, *On my way → Start → Finish*, resolved vs kept-open with parts, notes with photos, photo viewer, manager-only actions (create / edit / delete / reopen), parts board, team, PWA files, no horizontal scroll, no JS errors and HTML escaping.
+
+```bash
+npm install
+npx playwright install chromium webkit
+npm test              # starts the local server automatically
+npm run test:report   # open the HTML report
 ```
 
 ## Connect a real backend
