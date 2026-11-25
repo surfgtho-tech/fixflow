@@ -2,7 +2,9 @@
 import { CONFIG } from './config.js';
 import { todayISO, addDays, compressImage, blobToDataURL } from './ui.js';
 
-const LIVE = Boolean(CONFIG.SUPABASE_URL && CONFIG.SUPABASE_ANON_KEY);
+// ?demo in the URL forces demo mode (portfolio visitors, automated tests)
+const FORCE_DEMO = new URLSearchParams(location.search).has('demo');
+const LIVE = Boolean(CONFIG.SUPABASE_URL && CONFIG.SUPABASE_ANON_KEY) && !FORCE_DEMO;
 export const MODE = LIVE ? 'live' : 'demo';
 
 const api = LIVE ? await createSupabaseApi() : createDemoApi();
@@ -193,7 +195,7 @@ function seed() {
    LIVE  – Supabase (auth + Postgres + Storage + Realtime)
    ════════════════════════════════════════════════════════════ */
 async function createSupabaseApi() {
-  const { createClient } = await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/+esm');
+  const { createClient } = await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.49.4/+esm');
   const sb = createClient(CONFIG.SUPABASE_URL, CONFIG.SUPABASE_ANON_KEY);
   const BUCKET = 'job-photos';
   const must = ({ data, error }) => { if (error) throw error; return data; };

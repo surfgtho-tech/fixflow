@@ -104,7 +104,8 @@ async function renderLogin() {
       <label class="field"><span>Password</span><input type="password" name="password" autocomplete="current-password" required></label>
       <button class="btn btn-primary btn-block" type="submit">Sign in</button>
       <button class="btn btn-link" type="button" id="forgot">Forgot password?</button>
-    </form></div>`;
+    </form>
+    <a class="btn btn-link btn-block" href="?demo#/">Just looking? Try the demo →</a></div>`;
   const f = $app.querySelector('#login');
   f.onsubmit = async (e) => {
     e.preventDefault();

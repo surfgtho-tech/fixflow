@@ -4,7 +4,7 @@
 
 The office creates repair jobs reported by tenants (photos, address, description, contact details). The maintenance team gets them on their phones, navigates to the property, updates the status, uploads photos, requests parts, and closes the job – or keeps it open with the reason.
 
-> **Live demo:** open the GitHub Pages link of this repository and pick a demo user (no sign-up needed – demo data is stored only in your browser).
+> **Live demo:** https://surfgtho-tech.github.io/fixflow/?demo – pick a demo user, no sign-up needed (demo data is stored only in your browser).
 
 ## Features
 
